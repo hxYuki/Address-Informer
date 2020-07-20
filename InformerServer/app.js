@@ -34,7 +34,7 @@ app.get('/addr', function(req,res){
 app.post('/addr', function(req, res){
     addr = req.body.addr;
     lastUpdate = Date.now();
-    res.send(res.json(req.body))
+    res.send(res.json(addr))
 })
 
 app.get('/', function (req, res) {
