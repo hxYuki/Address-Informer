@@ -32,9 +32,9 @@ app.get('/addr', function(req,res){
 })
 
 app.post('/addr', function(req, res){
-    addr = req.body.addr;
+    addr =  req.headers['x-real-ip'] || req.headers['x-forwarded-for'] || req.ip;
     lastUpdate = Date.now();
-    res.send(res.json(addr))
+    res.send(addr)
 })
 
 app.get('/', function (req, res) {
