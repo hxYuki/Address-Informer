@@ -1,0 +1,7 @@
+{
+  "Server": "https://example.com/addr",
+  "UseIPv6": true,
+  "Authorize": true,
+  "Key": "u1wgw4y7xvc",
+  "Interval": 300
+}
